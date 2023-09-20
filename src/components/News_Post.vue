@@ -21,7 +21,7 @@ export default {
 </script>
 <style>
 .post {
-    width: 25vw;
+    width: 22vw;
     padding: 20px;
     text-align: center;
     cursor: pointer;
@@ -30,7 +30,7 @@ export default {
     margin: 20px;
     box-shadow: 5px 5px 10px #f5f3f3;
     transition: background-color 0.3s, box-shadow 0.3s;
-    font-size: 28px;
+    font-size: 18px;
     transition: transform 0.3s;
 }
 
@@ -39,7 +39,7 @@ export default {
 }
 
 img {
-    width: 80%;
+    width: 90%;
 }
 
 a {
@@ -53,7 +53,7 @@ a {
 
 .post h2 {
     transition: color 0.3s;
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .post:hover h2 {

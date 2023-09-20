@@ -1,9 +1,9 @@
 <template>
     <div>
-        <label for="#amountItems">Number of elements per page</label>
+        <label for="#amountItems">Posts per page</label>
         <select name="amountItems" id="amountItems" ref="amountSelect" @change="changeAmountItems">
-            <option value="8">8</option>
-            <option value="16">16</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
             <option value="24">24</option>
             <option value="48">48</option>
         </select>

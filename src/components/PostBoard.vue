@@ -29,7 +29,7 @@ export default {
         },
         amount: {
             default() {
-                return 8;
+                return 6;
             }
         }
     },
@@ -39,7 +39,7 @@ export default {
             selectedPost: null,
             page: 1,
             totalposts: 10,
-            itemsOnPage: 8,
+            itemsOnPage: 6,
         }
     },
     components: {
@@ -58,7 +58,7 @@ export default {
                 querry +
                 'from=2023-08-20&' +
                 'sortBy=popularity&' +
-                'apiKey=a053a630c58d46509b7fe99976290f7f';
+                'apiKey=b31fcdc8b21948dab1c86180ea11f5fb';
 
             var req = new Request(url);
 
