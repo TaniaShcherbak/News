@@ -9,28 +9,29 @@
 <script>
 import postPanel from "./components/PostBoard.vue"
 import searchBar from "./components/search.vue"
+import navPanel from "./components/NavPanel.vue"
 export default {
     name: "App",
     data() {
         return {
             newQ: "Apple",
             pageTitle: "LATEST NEWS HERE!!",
+            amountPost:8,
         }
     },
     components: {
         postPanel,
-        searchBar
+        searchBar,
+        navPanel
     },
     methods: {
         changeQuerry(data) {
             this.newQ=data;
             data.trim() == "" ? this.pageTitle = `LATEST NEWS HERE!!` : this.pageTitle = `LATEST NEWS ABOUT ${data}`;
-        }
-    },
-    computed: {
-        computedValue() {
-            return this.newQuerry;
         },
+        changeAmount(data){
+            this.amountPost=data;
+        }
     },
 }
 </script>

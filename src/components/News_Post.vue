@@ -1,23 +1,19 @@
 <template>
     <div class="post">
-        <!-- выводим значения принятого объекта -->
-        <h2>{{ postinfo.title }}</h2>
-        <p>{{ postinfo.author }}</p>
-        <p>{{ postinfo.desc }}</p>
-        <img @click="show" :src='postinfo.image' alt="image">
+        <a :href='postinfo.link' target="_blank">
+            <h2>{{ postinfo.title }}</h2>
+            <p>{{ postinfo.author }}</p>
+            <p>{{ postinfo.desc }}</p>
+            <img :src='postinfo.image' alt="image">
+        </a>
     </div>
 </template>
 <script>
 export default {
     name: 'newsPost',
     props: {
-        postinfo: {//принимаем из родительского
+        postinfo: {
             type: Object,
-        }
-    },
-    methods:{
-        show(){
-            console.log(this.postinfo);
         }
     }
 
@@ -25,16 +21,17 @@ export default {
 </script>
 <style>
 .post {
-    display: block;
     width: 25vw;
     padding: 20px;
     text-align: center;
     cursor: pointer;
-    border: 2px solid black;
-    margin-bottom: 50px;
 }
 
 img {
-    width: 200px;    
+    width: 200px;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 </style>
