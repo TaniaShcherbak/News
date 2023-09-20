@@ -2,7 +2,8 @@
     <div class="main-container">
         <h1>{{ pageTitle }}</h1>
         <searchBar @searchQuerry="changeQuerry" />
-        <postPanel :newQuerry=newQ />
+        <navPanel @amountItemsOnPage="changeAmount"/>
+        <postPanel :newQuerry=newQ :amount=amountPost />
     </div>
 </template>
 
