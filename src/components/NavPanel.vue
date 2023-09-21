@@ -20,3 +20,10 @@ export default {
     }
 }
 </script>
+<style>
+label {
+    color: white;
+    margin-left: 200px;
+    margin-right: 10px;
+}
+</style>
