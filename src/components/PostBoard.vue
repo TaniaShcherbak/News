@@ -94,7 +94,6 @@ export default {
                 const endIndex = startIndex + this.itemsOnPage;
                 pages.push(this.posts.articles.slice(startIndex, endIndex));
             }
-            console.log(pages[this.page - 1]);
             return pages[this.page - 1];
         },
     },
