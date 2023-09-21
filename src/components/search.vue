@@ -27,6 +27,8 @@ div input{
     border:none;
     background-color: rgb(245, 244, 244);
     margin-top: 30px;
+    padding-left: 20px;
+
 }
 input::placeholder{
     padding-left: 10px;
