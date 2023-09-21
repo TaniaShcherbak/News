@@ -23,7 +23,21 @@ export default {
 <style>
 label {
     color: white;
-    margin-left: 200px;
+    margin-left: 120px;
     margin-right: 10px;
+    font-size: 22px;
+
+}
+
+div select {
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: rgb(245, 244, 244);
+    border: none;
+    cursor: pointer;
+}
+
+#amountItems option {
+    cursor: pointer;
 }
 </style>
