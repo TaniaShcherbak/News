@@ -44,7 +44,7 @@ export default {
             this.newQ = data;
             data.trim() == ""
                 ? (this.pageTitle = `LATEST NEWS HERE!!`)
-                : (this.pageTitle = `LATEST NEWS ABOUT ${data}`);
+                : (this.pageTitle = `LATEST NEWS ABOUT ${data}`.toUpperCase());
 
         },
         changeAmount(data) {
@@ -65,6 +65,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Roboto';
 }
 
 .title {

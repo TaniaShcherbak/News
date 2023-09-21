@@ -38,7 +38,7 @@ export default {
     },
 };
 </script>
-<style>
+<style scoped>
 .post {
     width: 25vw;
     text-align: center;
@@ -96,6 +96,10 @@ a {
     bottom: 20px;
 }
 
+.fa-heart:hover {
+    transform: scale(1.1);
+    color: brown;
+}
 .red-heart {
     color: brown;
 }
