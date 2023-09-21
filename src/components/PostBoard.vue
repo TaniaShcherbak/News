@@ -56,7 +56,7 @@ export default {
             let querry = 'q=' + this.newQuerry + "&";
             var url = 'https://newsapi.org/v2/everything?' +
                 querry +
-                'from=2023-08-20&' +
+                'from=2023-08-21&' +
                 'sortBy=popularity&' +
                 'apiKey=b31fcdc8b21948dab1c86180ea11f5fb';
 
