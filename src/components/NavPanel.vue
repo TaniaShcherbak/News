@@ -28,14 +28,16 @@ label {
     font-size: 22px;
 
 }
-div select{
-   font-size: 16px;
-   border-radius: 10px;
+
+div select {
+    font-size: 16px;
+    border-radius: 10px;
     background-color: rgb(245, 244, 244);
     border: none;
+    cursor: pointer;
 }
 
-#amountItems option:hover{
-background:  rgb(116, 22, 22);
+#amountItems option {
+    cursor: pointer;
 }
 </style>
