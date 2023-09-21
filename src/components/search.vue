@@ -32,6 +32,11 @@ export default {
     height: 50px;
     border-radius:25px;
     width: 250px;
+    border:none;
+    background-color: rgb(245, 244, 244);
+    margin-top: 30px;
+    padding-left: 20px;
+
 
 }
 .searchImage{
