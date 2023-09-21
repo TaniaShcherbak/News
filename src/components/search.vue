@@ -35,8 +35,8 @@ export default {
     border:none;
     background-color: rgb(245, 244, 244);
     margin-top: 30px;
-    padding-left: 20px;
-
+    padding-left: 10px;
+    opacity: 80%;
 
 }
 .searchImage{
@@ -48,12 +48,11 @@ div input {
     padding: 0;
     border-radius: 25px;
     border: none;
-    opacity: 80%;
     width: 250px;
-    margin-left: 10px;
     outline: none;
+     opacity: 100%;
 }
 input::placeholder {
-    padding-left: 10px;
+    padding-left: 5px;
 }
 </style>
