@@ -1,7 +1,7 @@
 <template>
     <div v-if="currency" class="main converter">
         <div>
-            <p>Exchahge rate</p>
+            <p class="title">Exchahge rate</p>
             <table>
                 <thead>
                     <tr>
@@ -47,12 +47,24 @@ export default {
 }
 </script>
 <style>
-.main {
+.converter {
     color: white;
-    margin-left: 80vw;
-    margin-bottom: 80px;
+    background-color: #15222c;
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
+.converter .title {
+    text-align: center;
+    font-size: 16px;
+}
+.converter table {
+    margin: 0 auto;
+}
 table,
 th,
 td {

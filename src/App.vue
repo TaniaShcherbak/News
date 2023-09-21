@@ -5,13 +5,14 @@
                 <searchBar @searchQuerry="changeQuerry" />
                 <h1>{{ pageTitle }}</h1>
             </div>
-            <div>
-                <navPanel @amountItemsOnPage="changeAmount" />
+            <div class="navPanelBoard">                
+                <weatherPanel />
                 <currencyConvert />
             </div>
         </div>
 
         <postPanel :newQuerry="newQ" :amount="amountPost" />
+        <navPanel @amountItemsOnPage="changeAmount" />
     </div>
 </template>
 
@@ -20,6 +21,7 @@ import postPanel from "./components/PostBoard.vue";
 import searchBar from "./components/search.vue";
 import navPanel from "./components/NavPanel.vue";
 import currencyConvert from "./components/Currensy.vue"
+import weatherPanel from "./components/Weather.vue"
 export default {
     name: "App",
     data() {
@@ -34,7 +36,8 @@ export default {
         postPanel,
         searchBar,
         navPanel,
-        currencyConvert
+        currencyConvert,
+        weatherPanel
     },
     methods: {
         changeQuerry(data) {
@@ -75,5 +78,12 @@ export default {
 h1 {
     color: rgb(219, 221, 253);
     font-size: 48px;
+}
+.navPanelBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+    margin-top: 40px;
 }
 </style>
