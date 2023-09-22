@@ -10,7 +10,6 @@
                 <currencyConvert />
             </div>
         </div>
-
         <postPanel :newQuerry="newQ" :amount="amountPost" />
         <navPanel @amountItemsOnPage="changeAmount" />
     </div>
@@ -83,8 +82,8 @@ h1 {
 .navPanelBoard {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 100px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 </style>

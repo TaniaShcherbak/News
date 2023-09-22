@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="nav-panel">
         <label for="#amountItems">Posts per page</label>
         <select name="amountItems" id="amountItems" ref="amountSelect" @change="changeAmountItems">
             <option value="6">6</option>
@@ -21,6 +21,11 @@ export default {
 }
 </script>
 <style>
+    .nav-panel{
+        margin-bottom: 50px;
+
+    }
+
 label {
     color: white;
     margin-right: 10px;

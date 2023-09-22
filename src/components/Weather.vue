@@ -3,7 +3,7 @@
         <div>
             <p>{{ weather.location.name }} {{ weather.location.country }}</p>
             <p>{{ weather.location.localtime }}</p>
-            <p>{{ weather.current.temp_c }} &#8451;</p>
+            <p :style="{color: weather.current.temp_c > 0 ? 'yellow' : 'blue'}">{{ weather.current.temp_c}} &#8451;</p>
             <input type="text" placeholder="type in city" name="searchWeather" id="searchWeather" @keyup.enter="getrequest">
         </div>
         <div>
@@ -58,9 +58,14 @@ export default {
 }
 </script>
 <style>
+#degrees-color{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+}
 .weather {
     min-width: 400px;
-    background-color: #15222c;
+    background-color: rgba(21, 34, 44, 0.7);
     color: white;
     display: flex;
     flex-direction: row;
@@ -68,6 +73,10 @@ export default {
     align-items: center;
     border-radius: 15px;
     padding: 20px;
+}
+.weather div p{
+    font-size: 20px;
+    text-align: center;
 }
 
 .weather img {
@@ -77,6 +86,7 @@ export default {
 .weather input {
     height: 30px;
     padding-left: 10px;
+    background-color: rgb(245, 244, 244);
 }
 
 .weather input::placeholder {
