@@ -10,6 +10,7 @@
                 <currencyConvert />
             </div>
         </div>
+        <hotPanel @hotSearch="changeQuerry"/>
         <postPanel :newQuerry="newQ" :amount="amountPost" />
         <navPanel @amountItemsOnPage="changeAmount" />
     </div>
@@ -21,6 +22,7 @@ import searchBar from "./components/search.vue";
 import navPanel from "./components/NavPanel.vue";
 import currencyConvert from "./components/Currensy.vue"
 import weatherPanel from "./components/Weather.vue"
+import hotPanel from "./components/hotPanel.vue"
 export default {
     name: "App",
     data() {
@@ -36,7 +38,8 @@ export default {
         searchBar,
         navPanel,
         currencyConvert,
-        weatherPanel
+        weatherPanel,
+        hotPanel
     },
     methods: {
         changeQuerry(data) {
