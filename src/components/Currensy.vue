@@ -49,7 +49,8 @@ export default {
 <style>
 .converter {
     color: white;
-    background-color: #15222c;
+    background-color: rgba(21, 34, 44, 0.7);
+
     border-radius: 15px;
     width: 300px;
     display: flex;
@@ -60,7 +61,7 @@ export default {
 
 .converter .title {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
 }
 .converter table {
     margin: 0 auto;
@@ -68,6 +69,8 @@ export default {
 table,
 th,
 td {
+    font-size: 20px;
+
     padding: 4px;
     border: 2px solid darkgrey;
 }
