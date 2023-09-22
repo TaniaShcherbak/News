@@ -17,6 +17,14 @@
                         <td>{{ currency[i].rateSell }}</td>
                     </tr>
                 </tbody>
+                <tr>
+                    <td>RUS</td>
+                    <td style=" text-align:center; background-color: white;"><img src="@/assets/died.png" alt=""
+                            style="width: 25px;"></td>
+                    <td style=" text-align:center; background-color: white;"><img src="@/assets/died.png" alt=""
+                            style="width: 25px;"></td>
+                </tr>
+
             </table>
         </div>
     </div>
@@ -63,9 +71,11 @@ export default {
     text-align: center;
     font-size: 20px;
 }
+
 .converter table {
     margin: 0 auto;
 }
+
 table,
 th,
 td {
@@ -73,5 +83,4 @@ td {
 
     padding: 4px;
     border: 2px solid darkgrey;
-}
-</style>
+}</style>
