@@ -11,7 +11,7 @@
             </div>
         </a>
         <div @click="toggleHeart" class="like">
-            <i class="fas fa-heart" :class="{ 'red-heart': clicked }"></i>
+            <i class="fas fa-heart" :class="{ 'liked': liked }"></i>
             {{ counter }}
         </div>
     </div>
@@ -26,14 +26,19 @@ export default {
     },
     data() {
         return {
-            counter: 0,
+            counter: Math.floor(Math.random() * 10000) + 1,
             clicked: false,
+            liked: false,
         };
     },
     methods: {
         toggleHeart() {
-            this.clicked = true;
-            this.counter++;
+            this.liked = !this.liked; // Инвертируем значение liked
+            if (this.liked) {
+                this.counter++;
+            } else {
+                this.counter--;
+            }
         },
     },
 };
@@ -48,15 +53,11 @@ export default {
     margin: 30px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     transition: background-color 0.3s, box-shadow 0.3s;
-    font-size: 24px;
+    font-size: 18px;
     transition: transform 0.3s;
     overflow: hidden;
     position: relative;
     font-family: 'Roboto', sans-serif;
-}
-
-.post:hover {
-    transform: scale(1.05);
 }
 
 img {
@@ -83,9 +84,13 @@ a {
     padding: 20px;
 }
 
+.body-post:hover {
+    color: rgb(16, 16, 115);
+}
+
 .post h2 {
     transition: color 0.3s;
-    font-size: 32px;
+    font-size: 24px;
     padding: 20px;
     margin: 0;
 }
@@ -100,7 +105,7 @@ a {
     transform: scale(1.1);
     color: brown;
 }
-.red-heart {
+
+.liked {
     color: brown;
-}
-</style>
+}</style>
