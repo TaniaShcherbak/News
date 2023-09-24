@@ -79,8 +79,11 @@ export default {
 }
 
 h1 {
-    color: rgb(219, 221, 253);
+    color: white;
     font-size: 48px;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 5px;
 }
 .navPanelBoard {
     display: flex;

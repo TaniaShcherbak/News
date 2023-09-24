@@ -76,11 +76,14 @@ export default {
     margin: 0 auto;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 table,
 th,
 td {
     font-size: 20px;
-
-    padding: 4px;
+    padding: 8px;
     border: 2px solid darkgrey;
 }</style>

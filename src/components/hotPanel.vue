@@ -39,12 +39,19 @@ export default {
     height: 100px;
     border: 2px solid darkgrey;
     width: 100vw;
-    background-color: gray;
+    /* background-color: gray; */
 }
+
 .hotPanel button {
     width: 140px;
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.hotPanel button:hover {
+    color: brown;
 }
 </style>
