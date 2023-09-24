@@ -33,7 +33,7 @@ export default {
     },
     methods: {
         toggleHeart() {
-            this.liked = !this.liked; // Инвертируем значение liked
+            this.liked = !this.liked;
             if (this.liked) {
                 this.counter++;
             } else {
