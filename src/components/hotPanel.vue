@@ -22,7 +22,7 @@
                 @hotSearch="onHotSearch"
             />
             <hotButton
-                :hotButton="{ title: 'Travell' }"
+                :hotButton="{ title: 'Travel' }"
                 @hotSearch="onHotSearch"
             />
             <hotButton
@@ -65,7 +65,7 @@ export default {
     },
 };
 </script>
-<style>
+<style scoped>
 .hotPanel {
     display: flex;
     flex-direction: row;
@@ -75,18 +75,6 @@ export default {
     width: 94vw;
 }
 
-.hotPanel button {
-    width: 140px;
-    height: 40px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.hotPanel button:hover {
-    color: brown;
-}
 a {
     transform: translate(0%, 0%);
     color: #1670f0;
