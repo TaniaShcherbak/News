@@ -19,5 +19,10 @@ export default {
 }
 
 </script>
-<style></style>
-
+<style>
+button{
+    background-color:inherit;
+    color:white;
+    border:none;
+}
+</style>

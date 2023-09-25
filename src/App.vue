@@ -60,7 +60,7 @@ export default {
     width: 100vw;
     min-height: 400px;
     background: url(../public/headerbackground.png) no-repeat;
-    background-size: 100vw auto;
+    background-size: 100vw 100%;
 }
 
 .main-container {
@@ -90,6 +90,7 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     padding: 0px 100px;
+    padding-bottom: 20px;
     margin-top: 10px;
 }
 </style>
