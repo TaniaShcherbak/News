@@ -1,4 +1,5 @@
 <template>
+
      <a href="#">
       <span></span>
             <span></span>
@@ -6,6 +7,8 @@
       <span></span>
       <div class="hotPanel">
         <hotButton :hotButton="{ title: 'Sport' }" @hotSearch="onHotSearch" /> 
+    <div class="hotPanel">
+        <hotButton :hotButton="{ title: 'Sport' }" @hotSearch="onHotSearch" />
         <hotButton :hotButton="{ title: 'Weather' }" @hotSearch="onHotSearch" />
         <hotButton :hotButton="{ title: 'Culture' }" @hotSearch="onHotSearch" />
         <hotButton :hotButton="{ title: 'Politics' }" @hotSearch="onHotSearch" />
@@ -16,8 +19,7 @@
         <hotButton :hotButton="{ title: 'Tech' }" @hotSearch="onHotSearch" />
         <hotButton :hotButton="{ title: 'World' }" @hotSearch="onHotSearch" />
     </div>
-    </a>
-    
+    </a>  
 </template>
 <script>
 import hotButton from './hotButton.vue'
@@ -43,9 +45,11 @@ export default {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
     height: 50px;
     /* border: 2px solid darkgrey; */
     width: 98vw;
+
 }
 
 .hotPanel button {
@@ -60,6 +64,7 @@ export default {
 .hotPanel button:hover {
     color: brown;
 }
+
 a{
 transform: translate(0%,-10%);
 color:#1670f0;
