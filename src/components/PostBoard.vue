@@ -56,9 +56,9 @@ export default {
             let querry = 'q=' + this.newQuerry + "&";
             var url = 'https://newsapi.org/v2/everything?' +
                 querry +
-                'from=2023-08-21&' +
+                'from=2023-08-24&' +
                 'sortBy=popularity&' +
-                'apiKey=b31fcdc8b21948dab1c86180ea11f5fb';
+                'apiKey=a053a630c58d46509b7fe99976290f7f';
 
             var req = new Request(url);
 
@@ -94,7 +94,6 @@ export default {
                 const endIndex = startIndex + this.itemsOnPage;
                 pages.push(this.posts.articles.slice(startIndex, endIndex));
             }
-            console.log(pages[this.page - 1]);
             return pages[this.page - 1];
         },
     },

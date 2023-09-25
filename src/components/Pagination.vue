@@ -64,7 +64,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     margin-top: 20px;
 }
 
@@ -72,14 +72,16 @@ ul li {
     list-style-type: none;
     margin: 3px;
 }
+
 ul li button {
     border: none;
     background: transparent;
     color: white;
     font-size: 18px;
-
+    cursor: pointer;
 }
-ul li button:hover{
+
+ul li button:hover {
     scale: 1.5;
 }
 

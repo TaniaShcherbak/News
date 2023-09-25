@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="nav-panel">
         <label for="#amountItems">Posts per page</label>
         <select name="amountItems" id="amountItems" ref="amountSelect" @change="changeAmountItems">
             <option value="6">6</option>
@@ -21,21 +21,29 @@ export default {
 }
 </script>
 <style>
+    .nav-panel{
+        margin-bottom: 50px;
+
+    }
+
 label {
     color: white;
-    margin-left: 120px;
     margin-right: 10px;
     font-size: 22px;
 
 }
-div select{
-   font-size: 16px;
-   border-radius: 10px;
+
+div select {
+    font-size: 16px;
+    border-radius: 10px;
     background-color: rgb(245, 244, 244);
     border: none;
+    cursor: pointer;
 }
 
-#amountItems option:hover{
-background:  rgb(116, 22, 22);
+#amountItems option {
+    cursor: pointer;
 }
+
+
 </style>
