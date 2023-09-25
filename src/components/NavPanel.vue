@@ -44,4 +44,6 @@ div select {
 #amountItems option {
     cursor: pointer;
 }
+
+
 </style>
