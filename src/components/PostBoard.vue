@@ -3,7 +3,7 @@
         <div v-if="posts" class="post-board">
             <newsPost v-for="(index, i) in totalDisplayedPosts" :key="i" :postinfo="{
                 title: totalDisplayedPosts[i].title, desc: totalDisplayedPosts[i].description, content: totalDisplayedPosts[i].content
-                , image: totalDisplayedPosts[i].urlToImage, link:totalDisplayedPosts[i].url
+                , image: totalDisplayedPosts[i].urlToImage, link: totalDisplayedPosts[i].url
             }" />
         </div>
         <div v-else>
@@ -94,6 +94,10 @@ export default {
                 const endIndex = startIndex + this.itemsOnPage;
                 pages.push(this.posts.articles.slice(startIndex, endIndex));
             }
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
             return pages[this.page - 1];
         },
     },
