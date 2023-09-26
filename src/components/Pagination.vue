@@ -45,7 +45,11 @@ export default {
     methods: {
         changePage(pageNumber) {
             this.currentPage = pageNumber;
-            this.$emit('pageChanged', pageNumber)
+            this.$emit('pageChanged', pageNumber);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         },
         UpdatePagination(data) {
             this.currentPage = data;

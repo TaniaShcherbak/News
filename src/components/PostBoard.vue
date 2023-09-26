@@ -94,10 +94,6 @@ export default {
                 const endIndex = startIndex + this.itemsOnPage;
                 pages.push(this.posts.articles.slice(startIndex, endIndex));
             }
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
             return pages[this.page - 1];
         },
     },
