@@ -55,9 +55,6 @@ export default {
     components: {
         hotButton,
     },
-    // watch: {
-    //     hotSearch: 'onHotSearch'
-    // },
     methods: {
         onHotSearch(data) {
             this.$emit("hotSearch", data);
